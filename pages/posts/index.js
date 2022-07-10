@@ -6,7 +6,7 @@ function PostPage({ posts }) {
   return (
     <>
       {posts.map((p) => (
-        <h1>
+        <h1 key={p.slug}>
           <Link href={`/posts/${p.slug}`}>{p.title}</Link>
         </h1>
       ))}
