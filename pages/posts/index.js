@@ -4,15 +4,13 @@ import React from "react";
 
 function PostPage({ posts }) {
   return (
-    <main className="text-center">
+    <>
       {posts.map((p) => (
-        <h1 className="text-xl underline my-6">
-          <Link href={`/posts/${p.slug}`}>
-            <a>{p.title}</a>
-          </Link>
+        <h1>
+          <Link href={`/posts/${p.slug}`}>{p.title}</Link>
         </h1>
       ))}
-    </main>
+    </>
   );
 }
 

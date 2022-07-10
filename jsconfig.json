@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "@/components/*": ["components/*"],
+        "@/utils/*": ["utils/*"],
+        "@styles/*": ["styles/*"],
+        "@assets/*": ["assets/*"]
+      }
+    },
+    "exclude": [
+      "dist",
+      "build",
+      ".vscode",
+      ".next",
+      "coverage",
+      ".npm",
+      ".yarn"
+    ],
+  }
